@@ -35,6 +35,8 @@ CAUTION: If a 5V Vref is supplied to the LM35, because of the STM32's pins work 
 2) Because the timer used in this project is a 16-bit timer, the period between measurements parameters' max value is 65535 (2^16) milliseconds, which is 65.5 seconds. If a measurement period longer than 65.5 seconds is needed in some applications, a new timer function with a different timer prescaler approach is needed.
 
 **To Do List**
+-
+
 -Prior to bug 1, A robust error handling and user information mechanism is needed. 
 -A filtering or averaging mechanism may needed to be implemented to get more accurate results.
 -An auto-config function may needed to be implemented that automatically calculates and changes some of the config variables when user changes other related settings, especially for ADC resolution, sampling time and continous conversion modes.
