@@ -37,6 +37,6 @@ CAUTION: If a 5V Vref is supplied to the LM35, because of the STM32's pins work 
 **To Do List**
 -
 
--Prior to bug 1, A robust error handling and user information mechanism is needed. 
--A filtering or averaging mechanism may needed to be implemented to get more accurate results.
--An auto-config function may needed to be implemented that automatically calculates and changes some of the config variables when user changes other related settings, especially for ADC resolution, sampling time and continous conversion modes.
+* Prior to bug 1, A robust error handling and user information mechanism is needed.
+* A filtering or averaging mechanism may needed to be implemented to get more accurate results.
+* An auto-config function may needed to be implemented that automatically calculates and changes some of the config variables when user changes other related settings, especially for ADC resolution, sampling time and continous conversion modes.
