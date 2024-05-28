@@ -30,7 +30,7 @@ CAUTION: If a 5V Vref is supplied to the LM35, because of the STM32's pins work 
 -
 
 **Known Bugs and Limitations**
-1) When the cable connections between MCU and sensor is disconnected or somehow damaged, a noise occures on LM35's ADC signal cable (close to LM35's connector side) that makes the signal fluctuate even with a pull-down resistor with different values are tested, which makes harder to develop error handling algorithms and determine if the signal is healthy or not.
+1) When the cable connections between MCU and sensor is disconnected or somehow damaged, a noise occures on LM35's ADC signal cable (close to LM35's connector side) that makes the signal fluctuate even with a pull-down resistor with different values are tested, which makes harder to develop error handling algorithms and determine if the signal is healthy or not. Consequently, an error-text that informs user when a hardware error occurs is not available for now but will be implemented later.
    
 2) Because the timer used in this project is a 16-bit timer, the period between measurements parameters' max value is 65535 (2^16) milliseconds, which is 65.5 seconds. If a measurement period longer than 65.5 seconds is needed in some applications, a new timer function with a different timer prescaler approach is needed.
 
